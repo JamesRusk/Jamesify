@@ -1,3 +1,5 @@
+<!-- normal size image -->
+
 <section class="block block--dark block--skewed-left hero">
   <div class="container grid grid--1x2">
     <header class="block__header hero__content">
@@ -6,5 +8,28 @@
       <a href="" class="btn btn--accent btn--stretch">Get Started</a>
     </header>
     <img class="hero__image" src="images/banner.png" alt="" />
+  </div>
+</section>
+
+<!-- compact images -->
+
+<section class="block block--dark block--skewed-left hero">
+  <div class="container grid grid--1x2">
+    <header class="block__header hero__content">
+      <h1 class="block__heading">Cloud Hosting for Pros</h1>
+      <p class="hero__tagline">Deploy your websites in less than 60 seconds.</p>
+      <a href="" class="btn btn--accent btn--stretch">Get Started</a>
+    </header>
+    <picture>
+      <source
+        type="image/webp"
+        srcset="images/resize1x.webp 1x, images/resize2x.webp"
+      />
+      <source
+        type="image/png"
+        srcset="images/banner1x.png 1x, images/banner2x.png"
+      />
+      <img class="hero__image" src="images/banner1x.png" alt="" />
+    </picture>
   </div>
 </section>
