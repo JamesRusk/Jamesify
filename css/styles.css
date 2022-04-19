@@ -785,3 +785,28 @@ a {
 .plan:hover {
   transform: scale(1.2rem);
 }
+
+/* Features */
+
+.feature {
+  gap: 3rem 1rem;
+  margin: 1rem 1rem;
+}
+
+.feature:first-of-type {
+  margin-top: 12rem;
+}
+
+.feature__heading {
+  margin: 1rem 2rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
